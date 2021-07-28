@@ -9,9 +9,9 @@ function uploadIPFS($file_path, $file_name, $file_mime) {
     // content for uploading
     $content_type = "multipart/form-data";
     
-    $fp = $file_path; ## /path/to/file
-    $fn = $file_name; ## give it a name
-    $fm = $file_mime; ## example: image/png
+    $fp = $file_path; 
+    $fn = $file_name; 
+    $fm = $file_mime; 
     
     $data = new CURLFILE($fp, $fm,  $fn);
     $post_data = array("file" => $data, "name" => $fn, "wrapWithDirectory" => "false");
