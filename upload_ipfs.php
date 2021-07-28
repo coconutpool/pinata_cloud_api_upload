@@ -1,4 +1,4 @@
-function uploadIPFS($file_path, $file_name, $file_name) {
+function uploadIPFS($file_path, $file_name, $file_mime) {
     
     // API Setup
     $api_key        = "your_pinata_cloud_api_key";
